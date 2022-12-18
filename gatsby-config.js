@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `gotchicareprogram`,
+    title: `Gotchi Care Program`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
