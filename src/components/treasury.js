@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import GlobalStyles from "../global-styles";
 import { motion } from "framer-motion";
@@ -57,6 +58,7 @@ const Icon = styled(motion.img)`
 `;
 
 const Sum = styled.p`
+  color: #221635;
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 36px;
@@ -92,25 +94,37 @@ const Treasury = () => {
         src={Butterfly}
         initial="hidden"
         variants={{
-          visible: { opacity: 1, x: 30, transition: { duration: 1, delay: 0.5 } },
+          visible: {
+            opacity: 1,
+            x: 30,
+            transition: { duration: 1, delay: 0.5 },
+          },
           hidden: { opacity: 0, x: -30 },
         }}
         animate="visible"
       ></LeftImage>
-      <TreasuryBloc>
-        <Icon
-          src={CoinIcon}
-          transition={bounceTransition}
-          animate={{ y: ["7%", "-7%"] }}
-        ></Icon>
-        <Sum>850 <span style={{fontWeight: "500"}}>$GHST</span></Sum>
-        <SubSum>treasury</SubSum>
-      </TreasuryBloc>
+      <Link to="https://polygonscan.com/address/0x9ebC7894FA74A6b7E99B22aEF9e16A51E91d07a3" target="_blank">
+        <TreasuryBloc>
+          <Icon
+            src={CoinIcon}
+            transition={bounceTransition}
+            animate={{ y: ["7%", "-7%"] }}
+          ></Icon>
+          <Sum>
+            850 <span style={{ fontWeight: "500" }}>$GHST</span>
+          </Sum>
+          <SubSum>treasury</SubSum>
+        </TreasuryBloc>
+      </Link>
       <RightImage
         src={Sword}
         initial="hidden"
         variants={{
-          visible: { opacity: 1, x: -30, transition: { duration: 1, delay: 1 } },
+          visible: {
+            opacity: 1,
+            x: -30,
+            transition: { duration: 1, delay: 1 },
+          },
           hidden: { opacity: 0, x: 30 },
         }}
         animate="visible"
