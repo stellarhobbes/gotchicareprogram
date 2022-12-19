@@ -3,11 +3,11 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import GlobalStyles from "../global-styles";
 
+import { FaTwitter } from "react-icons/fa";
 import GCPLogo from "../images/gcp-logo.png";
 import SimpleButton from "./button";
 
-const Main = styled.div`
-`;
+const Main = styled.div``;
 const Wrapper = styled.section`
   padding: 15px 0px;
   display: flex;
@@ -60,8 +60,16 @@ const Navbar = () => {
       <Wrapper>
         <Logo src={GCPLogo}></Logo>
         <LinksBloc>
-          <SimpleLink to="https://www.fakegotchis.com" target="_blank">FAKE Shop</SimpleLink>
-          <SimpleLink>DAO Forum</SimpleLink>
+          <SimpleLink to="https://www.fakegotchis.com" target="_blank">
+            FAKE Shop
+          </SimpleLink>
+          <Link to="https://twitter.com/GotchiCareP">
+            <FaTwitter
+              size="25"
+              color="#221635"
+              style={{ marginRight: "25px" }}
+            />
+          </Link>
           <SimpleButton buttonUrl="https://snapshot.org/#/gotchicareprogram.eth">
             Snapshot
           </SimpleButton>

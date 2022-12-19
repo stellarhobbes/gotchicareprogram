@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   background-color: #fa00e0;
   padding: 10px 0px;
   @media (max-width: 960px) {
-    padding: 5px 0px;
+    display: none;
   }
 `;
 

@@ -16,6 +16,9 @@ const Title = styled(motion.h1)`
   text-transform: uppercase;
   font-weight: 300;
   color: #221635;
+  @media (max-width: 960px) {
+    font-size: 52px;
+  }
 `;
 
 const Italic = styled.span`
@@ -44,16 +47,16 @@ const ThreeColumns = styled.div`
 
 const InfoContent = [
   {
-    title: "Grab an NFT",
-    text: "Lorem ipsum dolor sit amet consectetur. Vestibulum nec cursus magna augue. ",
+    title: "Get an NFT",
+    text: "Get a piece of \"Alwaays odd or even\" FAKE Gotchis, or keep it preciously if you already have it.",
   },
   {
-    title: "Vote to the DAO",
-    text: "Lorem ipsum dolor sit amet consectetur. Vestibulum nec cursus magna augue. ",
+    title: "Vote in the DAO",
+    text: "Each piece of FAKE Gotchis equals one voting power (1x GCP) in the DAO. The effect is cumulative.",
   },
   {
     title: "Help building projects",
-    text: "Lorem ipsum dolor sit amet consectetur. Vestibulum nec cursus magna augue. ",
+    text: "Decide collectively how to use the treasury and create / fund caring projects on Web3.",
   },
 ];
 
@@ -66,9 +69,9 @@ const IndexPage = () => {
   return (
     <main>
       <TextSlider>
-        No prop at the moment • You'll be able to vote soon frens • No prop at the moment •
-        You'll be able to vote soon frens • No prop at the moment • You'll be able to
-        vote soon frens •&nbsp;
+        No prop at the moment • You'll be able to vote soon frens • No prop at
+        the moment • You'll be able to vote soon frens • No prop at the moment •
+        You'll be able to vote soon frens •&nbsp;
       </TextSlider>
       <Navbar />
       <TitleBloc>
@@ -93,4 +96,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Gotchi Care Program</title>;
