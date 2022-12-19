@@ -62,7 +62,7 @@ const Navbar = () => {
         <LinksBloc>
           <SimpleLink to="https://www.fakegotchis.com" target="_blank">FAKE Shop</SimpleLink>
           <SimpleLink>DAO Forum</SimpleLink>
-          <SimpleButton buttonUrl="https://snapshot.org/#/">
+          <SimpleButton buttonUrl="https://snapshot.org/#/gotchicareprogram.eth">
             Snapshot
           </SimpleButton>
         </LinksBloc>

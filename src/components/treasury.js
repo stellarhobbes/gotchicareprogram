@@ -21,11 +21,11 @@ const LeftImage = styled(motion.img)`
   left: 100px;
   @media (max-width: 960px) {
     height: 300px;
-    left: 0px;
+    left: -50px;
   }
   @media (max-width: 680px) {
     height: 200px;
-    left: -30px;
+    left: -100px;
   }
 `;
 const RightImage = styled(motion.img)`
@@ -34,11 +34,11 @@ const RightImage = styled(motion.img)`
   right: 100px;
   @media (max-width: 960px) {
     height: 300px;
-    right: 0px;
+    right: -50px;
   }
   @media (max-width: 680px) {
     height: 200px;
-    right: -30px;
+    right: -100px;
   }
 `;
 const TreasuryBloc = styled.div`
@@ -103,7 +103,7 @@ const Treasury = () => {
           transition={bounceTransition}
           animate={{ y: ["7%", "-7%"] }}
         ></Icon>
-        <Sum>875 <span style={{fontWeight: "500"}}>$GHST</span></Sum>
+        <Sum>850 <span style={{fontWeight: "500"}}>$GHST</span></Sum>
         <SubSum>treasury</SubSum>
       </TreasuryBloc>
       <RightImage

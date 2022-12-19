@@ -24,7 +24,7 @@ const Footer = () => {
       <GlobalStyles />
       <Link to="https://twitter.com/stellarhobbes" target="_blank">
       <Text>
-        made with love by <Pink>stellarhobbes</Pink>
+        made with 💜 by <Pink>stellarhobbes</Pink>
       </Text>
       </Link>
     </Main>
