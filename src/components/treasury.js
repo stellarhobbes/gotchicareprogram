@@ -111,7 +111,7 @@ const Treasury = () => {
             animate={{ y: ["7%", "-7%"] }}
           ></Icon>
           <Sum>
-            850 <span style={{ fontWeight: "500" }}>$GHST</span>
+            1.000 <span style={{ fontWeight: "500" }}>$GHST</span>
           </Sum>
           <SubSum>treasury</SubSum>
         </TreasuryBloc>
